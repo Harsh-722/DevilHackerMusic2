@@ -34,14 +34,14 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/8fddb775d567de8a63940.jpg",
+        photo=f"https://telegra.ph/file/5932850420f4f3f61ac81.jpg",
         caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
-💥 𝙃𝙚𝙡𝙡𝙤, 𝙄 𝘼𝙢 𝙎𝙪𝙥𝙚𝙧 𝙁𝙖𝙨𝙩 𝙈𝙪𝙨𝙞𝙘 𝙋𝙡𝙖𝙮𝙚𝙧
-𝘽𝙤𝙩 𝙁𝙤𝙧 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙂𝙧𝙤𝙪𝙥𝙨 ...
+💥 𝗛𝗲𝗹𝗹𝗼, 𝗜 𝗔𝗺 𝗜𝗿𝗼𝗻♡𝗛𝗲𝗮𝗿𝘁 𝗠𝘂𝘀𝗶𝗰 𝗕𝗼𝘁.
+𝗜 𝗖𝗮𝗻 𝗣𝗹𝗮𝘆 𝗠𝘂𝘀𝗶𝗰 𝗜𝗻 𝗚𝗿𝗼𝘂𝗽𝘀 𝗩𝗖...😍
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ 𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : [𝗥𝗬𝗠 𝗧𝗘𝗔𝗠](https://t.me/RYMOFFICIAL)
-┣★ 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 : [𝗝𝗮𝗶🇮🇳𝗛𝗶𝗻𝗱](https://t.me/JaiHindChatting)
-┣★ 𝙎𝙤𝙪𝙧𝙘𝙚 : [𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲](https://t.me/JaiHindChatting)
+┣★ 𝗢𝘄𝗻𝗲𝗿 : [𝗛𝗮𝗿𝘀𝗵](https://t.me/H4RSH_007)
+┣★ 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 : [𝗜𝗿𝗼𝗻𝗛𝗲𝗮𝗿𝘁](https://t.me/ironheartsupport722)
+┣★ 𝗦𝗼𝘂𝗿𝗰𝗲 : [𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲](https://t.me/H4RSH_007)
 ┗━━━━━━━━━━━━━━━━━┛
 
 ━━━━━━━━━━━━━━━━━━━━━━━━**""",
@@ -57,16 +57,16 @@ async def start_(client: Client, message: Message):
     )
     
     
-@Client.on_message(commandpro(["/start", "/alive", "legend"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["/start", "/alive", "/ironheart"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/8fddb775d567de8a63940.jpg",
+        photo=f"https://telegra.ph/file/5932850420f4f3f61ac81.jpg",
         caption=f"""""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 𝙅𝙤𝙞𝙣 𝙃𝙚𝙧𝙚 𝘼𝙣𝙙 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 💞", url=f"https://t.me/jaihindchatting")
+                        "💥 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 💞", url=f"https://t.me/ironheartsupport722")
                 ]
             ]
         ),
@@ -76,13 +76,13 @@ async def start(client: Client, message: Message):
 @Client.on_message(commandpro(["repo", "#repo", "@repo", "/repo", "source"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/8fddb775d567de8a63940.jpg",
+        photo=f"https://telegra.ph/file/5932850420f4f3f61ac81.jpg",
         caption=f"""""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "😆 𝘾𝙡𝙞𝙘𝙠 𝙃𝙚𝙧𝙚 𝙏𝙤 𝙂𝙚𝙩 𝙍𝙚𝙥𝙤 😆", url=f"https://t.me/jaihindchatting")
+                        "😆 𝘾𝙡𝙞𝙘𝙠 𝙃𝙚𝙧𝙚 𝙏𝙤 𝙂𝙚𝙩 𝙍𝙚𝙥𝙤 😆", url=f"https://t.me/H4RSH_007")
                 ]
             ]
         ),
