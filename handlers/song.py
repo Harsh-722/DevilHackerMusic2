@@ -94,7 +94,7 @@ async def song(client, message):
     time.time()
     if song:
         await rkp.edit("**📤 Uploading...**"),
-        lol = "./etc/tg_vc_bot.jpg"
+        lol = "./etc/tg_vc_bot.png"
         lel = await message.reply_audio(
                  f"{rip_data['id']}.mp3",
                  duration=int(rip_data["duration"]),
