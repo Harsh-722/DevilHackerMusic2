@@ -23,11 +23,11 @@ from yt_dlp.utils import (
 
 @Client.on_message(filters.command("song") & ~filters.edited)
 async def song(client, message):
-    cap = "**💥 Søɳʛ 🎸 Uƥɭøɗɘɗ 💿 Ɓy✌\n🔊 [ḊḕṼḭḶ 🇮🇳 ḦḀḉḲḕṙ 💞 ṀṳṠḭḉ](https://t.me/JaiHindChatting) 🌷 ...**"
+    cap = "**Song uploaded by IronHeart**"
     url = message.text.split(None, 1)[1]
-    rkp = await message.reply("**🔍 Sɘɑɤƈɦɩɳʛ ...**")
+    rkp = await message.reply("**🔍 Searching...**")
     if not url:
-        await rkp.edit("**💥 Ƥɭɘɑsɘ 💞 Ƥɤøⱱɩɗɘ 🔥 ƛ 🤞\n🎸 Søɳʛ 🤟 Ɲɑɱɘ 🌷 ...**")
+        await rkp.edit("**💥Plz.. provide song name..**")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
     test = search.result()
     p = json.loads(test)
@@ -35,7 +35,7 @@ async def song(client, message):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await rkp.edit("**❌ Søɳʛ Ɲøʈ Føʋɳɗ ...**")
+        return await rkp.edit("**❌Song not found...**")
     type = "audio"
     if type == "audio":
         opts = {
@@ -59,7 +59,7 @@ async def song(client, message):
         }
         song = True
     try:
-        await rkp.edit("**🔁 Ƥɤøƈɘssɩɳʛ ...**`")
+        await rkp.edit("**🔁 Processing...**`")
         with YoutubeDL(opts) as rip:
             rip_data = rip.extract_info(url)
     except DownloadError as DE:
@@ -93,7 +93,7 @@ async def song(client, message):
         return
     time.time()
     if song:
-        await rkp.edit("**📤 Upɭøɑɗɩɳʛ ...**"),
+        await rkp.edit("**📤 Uploading...**"),
         lol = "./etc/tg_vc_bot.jpg"
         lel = await message.reply_audio(
                  f"{rip_data['id']}.mp3",
